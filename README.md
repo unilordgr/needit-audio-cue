@@ -2,7 +2,7 @@
 
 A professional live performance audio cue manager. Load sounds onto pads, build cue sequences, and trigger them by keyboard shortcut or button — designed for theatre, events, and live shows.
 
-> **Formerly Kostudio Audio Cue.** Same app, same `.cuepro` shows, new name (since v1.6.0).
+> **Formerly Kostudio Audio Cue.** Same app, same `.cuepro` shows, new name (since v1.6.0). The project moved to `github.com/unilordgr/needit-audio-cue`; old links are redirected, except the old address of the hosted web app.
 
 ![Needit Audio Cue running a show: pads with waveforms, the status bar with what is playing, and the cue list with the NEXT CUE button](docs/screenshot.png)
 
@@ -12,7 +12,7 @@ A professional live performance audio cue manager. Load sounds onto pads, build 
 
 </details>
 
-[![Version](https://img.shields.io/github/v/release/unilordgr/kostudio-audio-cue?style=flat-square&color=brightgreen)](https://github.com/unilordgr/kostudio-audio-cue/releases/latest)
+[![Version](https://img.shields.io/github/v/release/unilordgr/needit-audio-cue?style=flat-square&color=brightgreen)](https://github.com/unilordgr/needit-audio-cue/releases/latest)
 
 ---
 
@@ -20,14 +20,14 @@ A professional live performance audio cue manager. Load sounds onto pads, build 
 
 | Platform | | |
 |---|---|---|
-| **Windows** x64 | Portable — no install needed | [![Windows](https://img.shields.io/badge/Download-.exe-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/unilordgr/kostudio-audio-cue/releases/latest/download/Needit-Audio-Cue-x64.exe) |
-| **macOS** Apple Silicon | M1 / M2 / M3 / M4 | [![macOS ARM](https://img.shields.io/badge/Download-arm64%20.dmg-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/unilordgr/kostudio-audio-cue/releases/latest/download/Needit-Audio-Cue-arm64.dmg) |
-| **macOS** Intel | x64 | [![macOS Intel](https://img.shields.io/badge/Download-x64%20.dmg-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/unilordgr/kostudio-audio-cue/releases/latest/download/Needit-Audio-Cue-x64.dmg) |
-| **iPad / Browser** | Safari · Chrome · Edge | [![iPad](https://img.shields.io/badge/Download-HTML%20file-00d4ff?style=for-the-badge&logo=safari&logoColor=white)](https://github.com/unilordgr/kostudio-audio-cue/releases/latest/download/Needit-Audio-Cue-iPad-Web.html) |
+| **Windows** x64 | Portable — no install needed | [![Windows](https://img.shields.io/badge/Download-.exe-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/unilordgr/needit-audio-cue/releases/latest/download/Needit-Audio-Cue-x64.exe) |
+| **macOS** Apple Silicon | M1 / M2 / M3 / M4 | [![macOS ARM](https://img.shields.io/badge/Download-arm64%20.dmg-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/unilordgr/needit-audio-cue/releases/latest/download/Needit-Audio-Cue-arm64.dmg) |
+| **macOS** Intel | x64 | [![macOS Intel](https://img.shields.io/badge/Download-x64%20.dmg-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/unilordgr/needit-audio-cue/releases/latest/download/Needit-Audio-Cue-x64.dmg) |
+| **iPad / Browser** | Safari · Chrome · Edge | [![iPad](https://img.shields.io/badge/Download-HTML%20file-00d4ff?style=for-the-badge&logo=safari&logoColor=white)](https://github.com/unilordgr/needit-audio-cue/releases/latest/download/Needit-Audio-Cue-iPad-Web.html) |
 
-> All releases: [github.com/unilordgr/kostudio-audio-cue/releases](https://github.com/unilordgr/kostudio-audio-cue/releases)
+> All releases: [github.com/unilordgr/needit-audio-cue/releases](https://github.com/unilordgr/needit-audio-cue/releases)
 
-**System requirements:** the desktop app is built on Electron 43 (Chromium 150), which needs **Windows 10 or newer** and **macOS 12 (Monterey) or newer**. On an older system, use the browser version (any current Chrome, Edge or Safari) or an [older release](https://github.com/unilordgr/kostudio-audio-cue/releases) (v1.2.x runs on older systems but no longer gets security fixes).
+**System requirements:** the desktop app is built on Electron 43 (Chromium 150), which needs **Windows 10 or newer** and **macOS 12 (Monterey) or newer**. On an older system, use the browser version (any current Chrome, Edge or Safari) or an [older release](https://github.com/unilordgr/needit-audio-cue/releases) (v1.2.x runs on older systems but no longer gets security fixes).
 
 ### First-run warnings (app is unsigned)
 
@@ -186,7 +186,9 @@ Click **More info** → **Run anyway**.
 **Coming from Kostudio Audio Cue (v1.5.0 or older) on a Mac:** that version cannot finish the update to the renamed app by itself. It downloads the new disk image and opens it — drag **Needit Audio Cue** to Applications, run the command above once, and delete the old *Kostudio Audio Cue* app. Your settings are carried over the first time the new app starts, and later updates are automatic again. (On Windows the update simply replaces the app in place.)
 
 ### Browser / iPad (no install)
-Use the hosted web app at **https://unilordgr.github.io/kostudio-audio-cue/**, or download `Needit-Audio-Cue-iPad-Web.html` from the [latest release](../../releases/latest) and open it locally.
+Use the hosted web app at **https://unilordgr.github.io/needit-audio-cue/**, or download `Needit-Audio-Cue-iPad-Web.html` from the [latest release](../../releases/latest) and open it locally.
+
+> **The web address changed with the rename.** The old address (`…github.io/kostudio-audio-cue/`) no longer works and cannot redirect. Open the new one and, on an iPad, add it to the Home Screen again. Shows saved in the browser itself are still there at the new address; shows saved inside an old Home Screen icon stay with that icon, so export them before removing it.
 
 | Browser | Save / Load |
 |---|---|
@@ -231,8 +233,8 @@ Click the key badge on any pad to reassign it.
 **Requirements:** Node.js 22.12 or newer (Electron's installer needs it)
 
 ```bash
-git clone https://github.com/unilordgr/kostudio-audio-cue.git
-cd kostudio-audio-cue
+git clone https://github.com/unilordgr/needit-audio-cue.git
+cd needit-audio-cue
 npm ci             # installs Electron (a ~100 MB download) and the build tools
 npm start          # run the desktop app
 npm run dist-win   # build Windows portable .exe

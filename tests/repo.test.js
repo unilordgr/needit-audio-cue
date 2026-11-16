@@ -104,7 +104,16 @@ ck('index.html CSS braces are balanced', depth === 0 && !negative, `depth=${dept
     buildYml.includes(`${dashed}-arm64.dmg`) && buildYml.includes(`${dashed}-x64.dmg`) && buildYml.includes(`${dashed}-iPad-Web.html`) && !/Kostudio/.test(buildYml));
   ck('the Mac updater looks for the app under the current name, and the old names are kept only to carry settings over',
     mainJs.includes(`const appName = '${name}.app';`) && /const OLD_APP_NAMES = \['Kostudio Audio Cue', 'kostudio-audio-cue'\];/.test(mainJs) &&
-    mainJs.includes("'https://api.github.com/repos/unilordgr/kostudio-audio-cue/releases/latest'"));
+    mainJs.includes("'https://api.github.com/repos/unilordgr/needit-audio-cue/releases/latest'"));
+  // The repository was renamed with the app. Installed apps are redirected by GitHub, but everything this repository itself says must
+  // name the new address — the update check, package.json, the README links and the hosted web app (whose old address does not redirect).
+  const repo = (/github\.com\/([\w.-]+\/[\w.-]+?)(?:\.git)?$/.exec(pkg.repository.url) || [])[1];
+  const contributing = read('CONTRIBUTING.md');
+  ck('one repository address everywhere: package.json, the update check, the README links, the hosted web app and the clone commands',
+    repo === 'unilordgr/needit-audio-cue' && mainJs.includes(`'https://api.github.com/repos/${repo}/releases/latest'`) &&
+    readme.includes(`https://github.com/${repo}/releases/latest/download/`) && readme.includes(`https://unilordgr.github.io/${repo.split('/')[1]}/`) &&
+    readme.includes(`git clone https://github.com/${repo}.git`) && contributing.includes(`git clone https://github.com/${repo}.git`) &&
+    !/unilordgr\/kostudio-audio-cue/.test(readme + contributing + mainJs + JSON.stringify(pkg)), repo);
   ck('the packaged Linux binary named in the test workflow matches the package name', read('.github/workflows/test.yml').includes(`dist/linux-unpacked/${pkg.name}`) && pkg.name === 'needit-audio-cue');
 }
 
