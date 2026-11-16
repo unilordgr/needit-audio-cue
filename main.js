@@ -171,7 +171,7 @@ async function checkForUpdates(manual = false) {
   if (!manual && !appSettings.checkUpdates) return { status: 'off' };
   try {
     const res = await net.fetch(
-      'https://api.github.com/repos/unilordgr/kostudio-audio-cue/releases/latest',
+      'https://api.github.com/repos/unilordgr/needit-audio-cue/releases/latest',
       { headers: { 'User-Agent': 'NeeditAudioCue-UpdateCheck' } }
     );
     if (!res.ok) return { status: 'error' };

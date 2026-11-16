@@ -1,7 +1,8 @@
 ### Needit Audio Cue: layers, cue notes, a status bar, a compact view and more (v1.6.0)
 
 **New name**
-- The app is now called **Needit Audio Cue** (it was Kostudio Audio Cue). Same app, same `.cuepro` shows, same web address, new icon. Your settings (output device, MIDI map, language, the remote-control link) are carried over the first time it starts
+- The app is now called **Needit Audio Cue** (it was Kostudio Audio Cue). Same app, same `.cuepro` shows, new icon. Your settings (output device, MIDI map, language, the remote-control link) are carried over the first time it starts
+- **New addresses:** the project is now at `github.com/unilordgr/needit-audio-cue`. Old links, downloads and the update check of installed apps are redirected. The hosted web app moved to `https://unilordgr.github.io/needit-audio-cue/`; its old address no longer works — open the new one and add it to the iPad Home Screen again (shows saved inside an old Home Screen icon stay with that icon: export them first)
 - **Windows:** the update replaces the app in place, as always (the file keeps the name it had on your disk)
 - **Mac — one manual step, this time only:** version 1.5.0 and older look for the old app name, so their automatic update cannot finish by itself. It downloads the new disk image and opens it: drag **Needit Audio Cue** to Applications, run `xattr -cr "/Applications/Needit Audio Cue.app"` once in Terminal, and delete the old *Kostudio Audio Cue* app. Later updates are automatic again
 
@@ -37,7 +38,7 @@
 - Shows from older versions open exactly as before
 - A show saved by 1.6 opens in 1.5 with LAYER pads as normal pads, cue notes / follow settings / stop cues ignored (a stop cue becomes a normal cue — check them), volume above 100 % as 100 %, and audio that lives in the project's own folder asking for **Browse for Folder…** once
 
-- 502 automated checks, including the real desktop app (from source and packaged). New: LAYER pads, the cue follow engine, stop cues, the status bar, the column layout (also with a wider system font), volume boost (measured in the real app), the close question, export and the settings carry-over — the new behaviour is mutation-checked
+- 503 automated checks, including the real desktop app (from source and packaged). New: LAYER pads, the cue follow engine, stop cues, the status bar, the column layout (also with a wider system font), volume boost (measured in the real app), the close question, export and the settings carry-over — the new behaviour is mutation-checked
 
 ---
 

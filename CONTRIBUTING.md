@@ -11,8 +11,8 @@ Thanks for wanting to help! Needit Audio Cue is used live, so the bar is "it mus
 ## Setup
 
 ```bash
-git clone https://github.com/unilordgr/kostudio-audio-cue.git
-cd kostudio-audio-cue
+git clone https://github.com/unilordgr/needit-audio-cue.git
+cd needit-audio-cue
 npm ci                          # Node 22.12+; installs Electron
 npx playwright install chromium
 npm start                       # run the desktop app
